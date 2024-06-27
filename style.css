@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -5,6 +6,7 @@
 body {
   height: 100vh;
   display: flex;
+  font-family: "Space Grotesk";
 }
 
 .left {
@@ -37,4 +39,26 @@ body {
   border: 2px solid green;
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
+  width: 50%;
+  margin-top: 20%;
+  margin-left: 20%;
 }
+.right form label {
+  font-size: 12px;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px rgba(73, 72, 72, 0.244);
+  margin-top: 5%;
+}
+.the-input {
+  font-size: 17px;
+  padding: 2% 3%;
+  font-family: "Space Grotesk";
+  border-radius: 10px;
+  /* outline: none; */
+  border-color: hsl(270, 3%, 87%);
+}
+.the-input:focus {
+  outline-color: 2px solid green;
+}
+/* outline: 2px solid hsl(249, 99%, 64%) to hsl(278, 94%, 30%); */
