@@ -7,6 +7,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="left">
+      <!-- <div class="front">
+        <img src="./assets/bg-card-front.png" alt="" />
+      </div>
+      <div class="back">
+        <img src="./assets/bg-card-back.png" alt="" />
+      </div> -->
+    </div>
+    <div class="right">
+      <form onsubmit="GetSubmitted()">
+        <label for=""> CARDHOLDER NAME</label>
+        <input type="text" name="" id="" placeholder="e.g Jane Appleseed" />
+        <label for=""> CARD NUMBER</label>
+        <input type="text" name="" id="" placeholder="e.g 1234 5678 9123 000" />
+        <div>
+          <div>
+            <label for="">EXP. DATE(MM/YY)</label>
+            <input type="number" placeholder="MM" />
+            <input type="number" placeholder="YY" />
+          </div>
+          <div>
+            <label for="">CVC</label>
+            <input type="number" placeholder="e.g 123" />
+          </div>
+        </div>
+        <button type="submit">Confirm</button>
+      </form>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>
