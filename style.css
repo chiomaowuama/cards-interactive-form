@@ -27,11 +27,26 @@ body {
 .filling {
   position: absolute;
   right: 10%;
-  top: 55%;
+  top: 45%;
   color: white;
-  font-size: 18px;
-  border: 2px solid yellow;
+  font-weight: 600;
+  font-size: 20px;
   width: 80%;
+}
+.name-date {
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+.names {
+  font-size: 15px;
+}
+.dates {
+  font-size: 13px;
 }
 .back {
   position: relative;
