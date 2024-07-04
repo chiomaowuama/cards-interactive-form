@@ -4,13 +4,13 @@
   margin: 0;
 }
 body {
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   font-family: "Space Grotesk";
 }
 
 .left {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   width: 33.5%;
   background-image: url("./assets/bg-main-desktop.png");
   background-repeat: no-repeat;
@@ -19,12 +19,12 @@ body {
 .front {
   position: relative;
   left: 25%;
-  top: 25%;
+  top: 20%;
 }
 .back {
   position: relative;
-  left: 25%;
-  top: 20%;
+  left: 55%;
+  top: 23%;
 }
 
 .right {
@@ -32,23 +32,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid green;
   width: 66.5%;
+  padding-bottom: 10%;
 }
 .right form {
-  border: 2px solid green;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  width: 50%;
-  margin-top: 20%;
+  gap: 0.2rem;
+  width: 47%;
+  margin-top: 10%;
   margin-left: 20%;
+  padding: 20% 0;
 }
 .right form label {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
   text-shadow: 1px 1px 1px rgba(73, 72, 72, 0.244);
   margin-top: 5%;
+  margin-bottom: 2%;
 }
 .the-input {
   font-size: 17px;
@@ -56,9 +57,51 @@ body {
   font-family: "Space Grotesk";
   border-radius: 10px;
   /* outline: none; */
-  border-color: hsl(270, 3%, 87%);
+  border: 1px solid hsla(240, 1%, 77%, 0.929);
+  /* width: 80%; */
 }
 .the-input:focus {
-  outline-color: 2px solid green;
+  border: none;
+  outline: 2px ridge hsl(270, 89%, 50%);
+}
+/* the dates and months */
+.dates-months {
+  display: flex;
+  margin-top: 2%;
+}
+.months {
+  padding-top: 3%;
+  display: flex;
+  gap: 1rem;
+}
+.months input {
+  width: 30%;
+  padding: 4%;
+  font-size: 15px;
+  border: 1px solid hsla(240, 1%, 77%, 0.929);
+  border-radius: 10px;
+}
+.monthsall {
+  width: 45%;
+  margin-top: 2%;
+}
+.cvcs {
+  margin-top: 2%;
+}
+.cvcs input {
+  padding: 4% 7%;
+  font-size: 15px;
+  border: 1px solid hsla(240, 1%, 77%, 0.929);
+  border-radius: 10px;
+}
+.the-submit {
+  background-color: hsl(278, 68%, 11%);
+  color: white;
+  font-family: "Space Grotesk";
+  font-size: 17px;
+  padding: 3% 0%;
+  border-radius: 10px;
+  border: none;
+  margin-top: 5%;
 }
 /* outline: 2px solid hsl(249, 99%, 64%) to hsl(278, 94%, 30%); */

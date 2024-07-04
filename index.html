@@ -8,12 +8,12 @@
   </head>
   <body>
     <div class="left">
-      <!-- <div class="front">
+      <div class="front">
         <img src="./assets/bg-card-front.png" alt="" />
       </div>
       <div class="back">
         <img src="./assets/bg-card-back.png" alt="" />
-      </div> -->
+      </div>
     </div>
     <div class="right">
       <form onsubmit="GetSubmitted()">
@@ -33,18 +33,20 @@
           placeholder="e.g 1234 5678 9123 000"
           class="the-input"
         />
-        <div>
-          <div>
+        <div class="dates-months">
+          <div class="monthsall">
             <label for="">EXP. DATE(MM/YY)</label>
-            <input type="number" placeholder="MM" />
-            <input type="number" placeholder="YY" />
+            <div class="months">
+              <input type="number" placeholder="MM" />
+              <input type="number" placeholder="YY" />
+            </div>
           </div>
-          <div>
+          <div class="cvcs">
             <label for="">CVC</label>
-            <input type="number" placeholder="e.g 123" />
+            <input type="text" placeholder="e.g 123" />
           </div>
         </div>
-        <button type="submit">Confirm</button>
+        <button type="submit" class="the-submit">Confirm</button>
       </form>
     </div>
     <script src="script.js"></script>
